@@ -55,3 +55,90 @@
     color: white; 
   }
   
+
+
+
+
+
+  body {
+    display: flex;
+    margin: 0;
+  }
+  
+  .sidebar {
+    position: absolute; /* Панель расположена относительно страницы */
+    top: 60px; /* Располагаем панель на 20px ниже шапки */
+    width: 180px; /* Ширина панели */
+    height: 500px;
+    background-color: #34495e; /* Темный фон панели */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 5px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
+
+     border: 3px solid transparent;
+    border-image: linear-gradient(45deg, #1abc9c, #3498db);
+    border-image-slice: 1;
+    
+  }
+
+
+  
+  .sidebar-btn {
+    display: block; /* Каждая кнопка на новой строке */
+    width: 100%; /* Кнопки занимают всю ширину панели */
+    padding: 10px; /* Внутренние отступы */
+    margin-bottom: 10px; /* Отступ между кнопками */
+    background-color: #34495e; 
+    color: #ecf0f1; /* Светлый текст */
+    text-align: left; /* Выравнивание текста по левому краю */
+    border: none; /* Убираем стандартную рамку кнопок */
+    border-radius: 3px; /* Скругленные углы */
+    cursor: pointer; /* Курсор меняется на указатель */
+    transition: background-color 0.3s ease; /* Плавный переход фона */
+    font-size: 13px;
+  }
+  
+  .sidebar-btn:hover {
+    background-color: #f5f5f5; /* Цвет кнопок при наведении */
+    color: rgb(0, 0, 0); /* Белый текст */
+  }
+
+  /* Убираем последний отступ между кнопками */
+  .sidebar-btn:last-child {
+    margin-bottom: 0;
+  }
+
+  .columns {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .add-task-btn {
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #16a085;
+  }
+  
