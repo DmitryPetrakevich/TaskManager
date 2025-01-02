@@ -11,6 +11,7 @@
   }
   
   .page-header__container {
+    position: relative;
     display: flex; 
     justify-content: center; 
     flex-grow: 1; 
@@ -56,10 +57,6 @@
   }
   
 
-
-
-
-
   body {
     display: flex;
     margin: 0;
@@ -81,8 +78,6 @@
     
   }
 
-
-  
   .sidebar-btn {
     display: block; /* Каждая кнопка на новой строке */
     width: 100%; /* Кнопки занимают всю ширину панели */
@@ -142,3 +137,43 @@
     background-color: #16a085;
   }
   
+
+
+
+
+
+
+
+
+
+
+/* Логотип */
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease; /* Плавное вращение */
+}
+
+.logo-icon {
+  font-size: 1.8rem;
+  margin-right: 5px;
+  color: #4caf50;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  color: #e0d4d4;
+}
+
+/* При наведении */
+.logo:hover .logo-icon {
+  transform: rotate(15deg); /* Легкое вращение иконки */
+}
