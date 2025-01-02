@@ -1,4 +1,5 @@
 .page-header {
+  display: block;
     height: 40px;
     background-color: #2c3e50; 
     color: #ecf0f1; 
@@ -37,11 +38,13 @@
     color: #1abc9c; 
   }
   
-  .page-header__nav-user {
+  .page-header__nav-user,
+  .page-header__nav-reg {
     display: flex; 
   }
   
-  .page-header__nav-user-link {
+  .page-header__nav-user-link,
+  .page-header__nav-reg-link {
     margin-right: 40px;
     color: #1abc9c; 
     text-decoration: none; 
@@ -50,8 +53,13 @@
     border-radius: 5px; 
     transition: background-color 0.3s ease; 
   }
+
+  .page-header__nav-reg-link {
+    margin-right: 10px;
+  }
   
-  .page-header__nav-user-link:hover {
+  .page-header__nav-user-link:hover,
+  .page-header__nav-reg-link:hover {
     background-color: #16a085; 
     color: white; 
   }
@@ -94,8 +102,7 @@
   }
   
   .sidebar-btn:hover {
-    background-color: #f5f5f5; /* Цвет кнопок при наведении */
-    color: rgb(0, 0, 0); /* Белый текст */
+    background-color: rgba(255, 255, 255, 0.2); /* Прозрачный белый фон при наведении */
   }
 
   /* Убираем последний отступ между кнопками */
@@ -137,16 +144,6 @@
     background-color: #16a085;
   }
   
-
-
-
-
-
-
-
-
-
-
 /* Логотип */
 .logo {
   display: flex;
